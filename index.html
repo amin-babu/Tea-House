@@ -15,6 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/c396ae6964.js" crossorigin="anonymous"></script>
+
   <!-- favicon -->
    <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
 
@@ -24,7 +27,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient_start': '#FF8938',
+            'gradient_end': '#F00',
           }
         }
       }
@@ -40,21 +44,23 @@
 
 <body class="font-manrope">
   <header class="container mx-auto">
-    <div class="hero">
-      <div class="hero-content mt-10 flex-col lg:flex-row">
+    <div class="my-20">
+      <div class="flex justify-between items-center mt-10 flex-col lg:flex-row">
        
         <div>
           <h1 class="text-7xl font-extrabold">It's good <br>
             tea time at The <br>
             Tea House</h1>
           <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-          <button class="btn btn-primary">Get Started</button>
+          <button class="btn bg-gradient-to-r from-gradient_start to-gradient_end text-white">Get Started
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </button>
         </div>
 
         <div>
-          <img src="images/banner.png" class="max-w-sm"/>
+          <img src="images/banner.png" class=""/>
           <!-- rating badge -->
-          <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+          <div class="-mt-28 ml-28 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-64 rounded-md">
             <i class="fa-solid fa-star text-3xl text-amber-400"></i>
             <div>
               <h3 class="text-3xl">5.00</h3>
@@ -138,14 +144,14 @@
           </div>
       </section>
       <!-- super client section -->
-      <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient_start to-gradient_end px-16 py-24">
           <div class="flex lg:pr-28 items-center">
               <div class="space-y-5">
                 <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
                 <p class="text-white">
                   There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
                 </p>
-                <button class="btn btn-primary">Show All</button>
+                <button class="btn bg-gradient-to-r from-gradient_start to-gradient_end text-white">Show All</button>
               </div>
           </div>
 
@@ -231,8 +237,54 @@
         </div>
       </section>
   </main>
-  <footer>
 
+  <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+    <div class="flex justify-between my-24">
+      <img src="images/cup.png" alt="">
+      <p>
+        <span>Ready to get strated?</span>
+        <button class="btn bg-gradient-to-r from-gradient_start to-gradient_end text-white">Get Started</button>
+      </p>
+    </div>
+    <div class="footer ">
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+      <form>
+        <h6 class="footer-title">Newsletter</h6> 
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="py-4  bg-transparent border-b-2 border-black outline-none" /> 
+            <button class="btn text-white bg-gradient-to-r from-gradient_start to-gradient_end rounded-full">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <aside class="mt-10 text-center">
+      <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+    </aside>
   </footer>
 </body>
 </html>
